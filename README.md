@@ -15,7 +15,7 @@ In this challenge, I built and trained a deep learning neural network model in o
 
 ![Preprocess_2.png](https://github.com/Robertfnicholson/Neural_Network_Charity_Analysis/blob/0307b0ee3027d6d0817ee816841b1b969ef36015/Preprocess_2.png)
 ### Compiling, Training, and Evaluating the Model
-*	In the initial model, I selected three times the number of inputs for neurons, i.e., there were 45 inputs, so I used 135 neurons. I also selected an input layer, two input layers and an output layer since these are the minimum number of layers required for a deep learning, neural network model. In the optimization model, I used Python code to optimize the deep learning model by varying the activation function, the neurons in the first layer, and the number of hidden layers. The optimization model increased the accuracy from the initial model of 64.9% to 72.9. 
+*	In the initial model, I selected three times the number of inputs for neurons, i.e., there were 45 inputs, so I used 135 neurons. I also selected an input layer, two input layers and an output layer since these are the minimum number of layers required for a deep learning, neural network model. 
 *	The initial model resulted in an accuracy score of 65.9%, below the target of 75%.
 *	To increase the model performance, I used automated model optimization that varied the activation function, the neurons in the first layer, and the number of hidden layers. This resulted in a 72.9% accuracy, which also was below the target of 75%.    
 ![Compile_Train_Evaluate.png](https://github.com/Robertfnicholson/Neural_Network_Charity_Analysis/blob/0307b0ee3027d6d0817ee816841b1b969ef36015/Compile_Train_Evaluate.png)
@@ -24,6 +24,8 @@ In this challenge, I built and trained a deep learning neural network model in o
 
 ![ASC_OPT_v1.png](https://github.com/Robertfnicholson/Neural_Network_Charity_Analysis/blob/f3b158486f284e0ff5a6cfcfbc9bb65dbf4712e0/ASC_OPT_v1.png)
 
+* I also ran two additional versions of the model: (1) one in which I eliminated the outliers for the ASK_AMT and (2) the other in which I eliminated the ASK_AMT column altogether. However, this did not result in increased accuracy. In fact the accuracy decreased when I eliminated the outliers for the ASK_AMT to 52.7%. 
+
 ## Summary
- I ran multiple versions of the deep learning model. These provided accuracy results that varied from 64.9% in the initial model to the optimized model of 72.9%. I also ran two versions of the model: (1) eliminated the outliers for the ASK_AMT and (2) eliminated the ASK_AMT column altogether. However, this did not result in increased accuracy. In fact the accuracy decreased when I eliminated the outliers for the ASK_AMT to 52.7%.  I recommend using a RandomForest model and compare these results to the neural network, deep learning model. In a RandomForest model both output and feature selection are easy to interpret, and it can easily handle outliers and nonlinear data. </p>
+ I ran multiple versions of the deep learning model. These provided accuracy results that varied from 64.9% in the initial model to the optimized model of 72.9%. I recommend using a RandomForest model and compare these results to the neural network, deep learning model. In a RandomForest model both output and feature selection are easy to interpret, and it can easily handle outliers and nonlinear data. </p>
 
